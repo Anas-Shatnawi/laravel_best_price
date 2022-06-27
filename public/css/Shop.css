@@ -1,0 +1,741 @@
+* {
+    font-family: 'KoHo', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e2e2e2;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+/* ------------------- {{{{{{{{{{{{ NAVBAR  }}}}}}}}}}} ------------------------------  */
+#app {
+    position: relative;
+}
+
+#list-button {
+    background-color: #000000;
+    color: #ffffff;
+    position: fixed;
+    top: 40vh;
+    left: auto;
+    z-index: 1000;
+    box-shadow: 0px 0px 3px black;
+    border-top-left-radius: 0;
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 0;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+#list-button:hover {
+    transform: scale(1.1);
+    transition: transform 100ms;
+}
+
+#logo {
+    width: 65px;
+    height: 40px;
+}
+
+#mainNav .navbar-brand:hover {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    transition: transform 500ms;
+    color: #000000;
+}
+
+
+/* ------------------ end brand */
+
+#navLinks {
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#centeredlinks a {
+    margin-left: 10vh;
+}
+
+#mainNav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+#mainNav .nav-link:hover {
+    transform: scale(1.08, 1.08);
+    transition: transform 500ms;
+    color: #001aff;
+}
+
+#login-button i {
+    color: #000000;
+    font-size: large;
+}
+
+#login-button {
+    font-size: large;
+}
+
+
+/*  -------------------- end -links */
+
+.navbar.scrolled {
+    background-color: #9e9c9cf0;
+    transition: background-color 600ms ease-in;
+}
+
+#navbar-toggler {
+    background-color: antiquewhite;
+}
+
+.navbar-toggler-icon {
+    color: #000000;
+}
+
+@media(max-width:992px) {
+    #mainNav {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+
+/* ------------------- {{{{{{{{{{{{ END OF NAVBAR  }}}}}}}}}}} ------------------------------  */
+
+
+/* --------------- {{{{{{{{{{{{{{{{{{  HOME HEADERS     }}}}}}}}}}}}}}}}}}}}}} ----------------------------------- */
+
+.head {
+    margin-top: 2vh;
+    margin-left: 1vw;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: 900;
+    padding-bottom: 10px;
+    width: 70vw;
+    color: #000000;
+}
+
+.head img {
+    width: 5rem;
+    height: 5rem;
+}
+
+@media only screen and (max-width:750px) {
+    .head {
+        font-size: 3vw;
+    }
+
+    .head img {
+        width: 10vw;
+        height: 10vh;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .head {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .head img {
+        display: none;
+    }
+}
+
+/* --------------- HOME END HEADERS ----------------------------------- */
+
+.container-section {
+    width: auto;
+    height: auto;
+    position: relative;
+    background-color: #ffffff;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 2rem;
+    overflow: hidden;
+}
+
+.container-section .view-more {
+    position: absolute;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #00000000;
+    font-weight: 500;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+    width: 100%;
+    height: 7vh;
+    right: auto;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.container-section .view-more::after {
+    content: '';
+    background-color: #000000;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.container-section .view-more:hover {
+    background-color: #000000;
+    color: #007bff;
+    transition: ease-in-out 300ms;
+    font-weight: 700;
+    transform: scale(1.05, 1.05);
+}
+
+
+#productByCategory .container-section {
+    background-color: #ffffff;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 4rem;
+    box-shadow: 0.5rem 0.5rem 2rem;
+}
+
+#homepage {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+/* --------------------------- {{{{{{  Home CARD    }}}}}} */
+
+#homepage .container-section .cards-container {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#homepage .card-body {
+    padding: 0;
+}
+
+
+#homepage .card {
+    border: 1px solid #000000;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+    background-color: rgba(231, 231, 231, 0.884);
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(117, 117, 117);
+}
+
+#homepage .card img {
+    height: 20vh;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1vh;
+}
+
+#homepage .card:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 200ms;
+}
+
+#homepage .card-title {
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#homepage .card-footer {
+    padding: 0px;
+}
+
+#homepage .card-text {
+    font-size: 1rem;
+}
+
+#fill-star {
+    color: #FFD700;
+}
+
+@media (max-width:1200px) {
+    #homepage .card-title {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:750px) {
+    #homepage .card-title {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:538px) {
+    #homepage .card-title {
+        font-size: 3.5vw;
+    }
+}
+
+/* --------------------------- {{{{{{ HOME  END CARD    }}}}}} */
+
+
+/* ------------------   BTN -------------------------- */
+
+#visit-btn:hover {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border: #ffffff solid 1px;
+    transition: background-color 500ms ease-out;
+}
+
+#visit-btn {
+    font-weight: 700;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: #000000 solid 1px;
+}
+
+
+/* ------------------   END BTN  -------------------------- */
+
+
+/* ---------------  PRICE TEXT  --------------------------- */
+
+.price {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+/* ---------------    END PRICE TEXT  --------------------------- */
+
+@media(max-width:992px) {
+    #mainNav {
+        background-color: rgb(148, 148, 148);
+    }
+}
+
+
+/* -------------    {{{{{{{{  cool-navbar   }}}}}}}}} */
+
+.cool-navbar {
+    z-index: 2;
+    color: rgb(0, 0, 0);
+}
+
+#newProducts ul li a {
+    display: inline-block;
+    font-size: 12.5px;
+    padding: 5px 10px;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#newProducts ul li a span {
+    display: none;
+    margin-right: 10px;
+    top: 2px;
+    position: relative;
+}
+
+#newProducts ul li a.active span {
+    display: inline-block;
+    top: 0;
+}
+
+#newProducts ul li a .indicator {
+    width: 3.5px;
+    height: 3.5px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    position: relative;
+}
+
+#newProducts ul li a.active .indicator {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    right: -3px;
+    top: 2px;
+}
+
+#newProducts ul li a:hover span {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+#bestSeller ul li a {
+    display: inline-block;
+    font-size: 12.5px;
+    padding: 5px 10px;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#bestSeller ul li a span {
+    display: none;
+    margin-right: 10px;
+    top: 2px;
+    position: relative;
+}
+
+#bestSeller ul li a.active span {
+    display: inline-block;
+    top: 0;
+}
+
+#bestSeller ul li a .indicator {
+    width: 3.5px;
+    height: 3.5px;
+    border-radius: 0;
+    transform: rotate(-45deg);
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    position: relative;
+}
+
+#bestSeller ul li a.active .indicator {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    right: -3px;
+    top: 2px;
+}
+
+#bestSeller ul li a:hover span {
+    display: inline-block;
+    color: #4100a7;
+    font-weight: 700;
+}
+
+#topRated ul li a {
+    display: inline-block;
+    font-size: 12.5px;
+    padding: 5px 10px;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#topRated ul li a span {
+    display: none;
+    margin-right: 10px;
+    top: 2px;
+    position: relative;
+}
+
+#topRated ul li a.active span {
+    display: inline-block;
+    top: 0;
+}
+
+#topRated ul li a:hover span {
+    display: inline-block;
+    color: #4100a7;
+    font-weight: 700;
+}
+
+#topRated ul li a .indicator {
+    width: 3.5px;
+    height: 15px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    position: relative;
+}
+
+#topRated ul li a.active .indicator {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    right: -3px;
+    top: -2px;
+}
+
+nav.cool-navbar {
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    text-align: right
+}
+
+.min-span {
+    color: rgb(0, 0, 0);
+}
+
+@media(max-width:768px) {
+    nav.cool-navbar {
+        right: 2px;
+        bottom: 12px;
+        z-index: 2;
+    }
+
+    .mini-span {
+        display: none
+    }
+
+    .mini-span:hover {
+        display: none
+    }
+}
+
+
+/* -------------------------------------Login Page --------------------- */
+
+.register-login-form {
+    margin-bottom: 27vh;
+    background-color: #fffffffb;
+    color: #000000;
+    box-shadow: 0px 0px 10px 5px #4000a771, 0px 0px 5px 5px rgba(0, 0, 0, 0.19);
+    border-radius: 0.5vw;
+}
+#register{
+    margin-top: 7vh;
+    margin-bottom: 20vh !important;
+}
+.register-login-form .card-header {
+    text-align: center;
+    /* font-weight: 700; */
+    letter-spacing: 0.1vw;
+    font-size: 1.3rem;
+}
+
+.login_button:hover {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #4100a7;
+    border: #4100a7 solid 1px;
+    transition: background-color 500ms ease-out;
+}
+
+.login_button {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: #000000 solid 1px;
+}
+
+#forgot_password {
+    text-decoration: none;
+    color: #000000;
+}
+
+#forgot_password:hover {
+    transform: scale(1.03, 1.03);
+}
+
+#login-content .or-container {
+    align-items: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin: 25px 0
+}
+
+#login-content .line-separator {
+    background-color: #ccc;
+    flex-grow: 5;
+    height: 1px
+}
+
+#login-content .or-label {
+    flex-grow: 1;
+    margin: 0 15px;
+    text-align: center
+}
+
+
+/*--------- googel button ------------------*/
+
+#login-content .btn-google {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 0.5vw 0.7vw 0.7vw 0.7vw;
+    border: #000000 solid 1px;
+    color: #000000;
+    box-shadow: 1vw #4100a7;
+}
+
+#login-content .btn-google:hover {
+    text-decoration: none;
+    transform: scale(1.03, 1.03);
+    transition: transform 100ms;
+}
+
+/* --------------Categories ------------------ */
+#some-categories-container {
+    position: relative;
+    width: 100vw;
+    background-color: #ffffff;
+    margin-top: 5vh;
+    padding-top: 5vh;
+    margin-bottom: 10vh;
+    box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.568);
+    overflow: hidden;
+}
+
+
+#some-categories-container #categories-header {
+    text-align: center;
+}
+
+#some-categories-container #categories-header h1 {
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+#some-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding-left: 1vw;
+    justify-items: center;
+    padding-top: 3vh;
+    padding-bottom: 70px;
+}
+
+@media(max-width:1450px) {
+    #some-categories {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        padding-right: 1vw;
+        padding-left: 0vw;
+    }
+}
+
+@media(max-width:1200px) {
+    #some-categories {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:900px) {
+    #some-categories {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px) {
+    #some-categories {
+        grid-template-columns: 1fr;
+        margin: 0;
+        justify-items: center;
+
+    }
+}
+
+#some-categories #categorey-card {
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    height: 250px;
+    box-shadow: 0.3rem 0.3rem 1rem black;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+#some-categories #categorey-card:hover {
+    transform: scale(1.02, 1.02);
+    transition: 100ms;
+}
+
+#some-categories #categorey-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#some-categories #categorey-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000000be;
+    color: #ccc;
+}
+
+#some-categories-container .view-more {
+    position: absolute;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #00000000;
+    font-weight: 500;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+    width: 100%;
+    height: 7vh;
+    right: auto;
+    bottom: 0;
+    z-index: 1000;
+}
+
+#some-categories-container .view-more::after {
+    content: '';
+    background-color: #000000;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#some-categories-container .view-more:hover {
+    background-color: #000000;
+    color: #007bff;
+    transition: ease-in-out 300ms;
+    font-weight: 700;
+    transform: scale(1.05, 1.05);
+}

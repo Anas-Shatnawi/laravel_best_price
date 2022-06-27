@@ -1,0 +1,76 @@
+.checkout {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.container-details {
+    display: grid;
+    grid-template-columns: 0.8fr 0.6fr;
+    gap: 50px;
+}
+
+@media(max-width:992px) {
+    .container-details {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.container-details .basic-details .card {
+    border-radius: 20px;
+    box-shadow: 0.4rem 0.4rem 0.7rem black;
+    overflow: hidden;
+}
+
+.container-details .other-details .card {
+    margin-bottom: 10vh;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0.4rem 0.4rem 0.7rem black;
+    overflow: hidden;
+}
+
+.place-order {
+    display: flex;
+}
+
+.container-details .other-details .card button {
+    margin-left: auto;
+    color: white;
+    background-color: rgba(0, 0, 153, 0.733);
+}
+
+.container-details .basic-details .card h6 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.field-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+@media (max-width:400px) {
+    .field-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.input-box input {
+    margin-bottom: 3vh;
+    width: 150px;
+    padding: 5px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    font-weight: 400;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input, lable {
+    display: block;
+}

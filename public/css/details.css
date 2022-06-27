@@ -1,0 +1,337 @@
+#details-container {
+    width: 95%;
+    margin-top: 10vh;
+    margin-left: 2vw;
+    margin-bottom: 10vh;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem 0.5rem rgb(117, 117, 117);
+    overflow: hidden;
+}
+
+#detail-header {
+    color: #000000;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 1vh;
+}
+
+
+#details-container #product-image {
+    width: 30vw;
+    height: 70vh;
+    object-fit: contain;
+}
+
+#details-container #text-img {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 60rem;
+    height: 15vh;
+    padding-top: 0.5vh;
+    font-size: 5vh;
+}
+
+#details-container #content {
+    display: flex;
+    flex-direction: column;
+}
+
+#details-container #product-name {
+    color: #000000;
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+#details-container #product-price {
+    font-size: 2rem;
+    color: #000000;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+#details-container #cate-name {
+    margin: 0;
+    color: #000000;
+}
+
+#details-container #descriptions {
+    font-size: 1.2rem;
+    margin: 0.5vw;
+    font-weight: 600;
+}
+
+.hr-black {
+    background-color: #000000;
+}
+
+#details-container #desc-div {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#details-container #desc-div h4 {
+    font-weight: 900;
+}
+
+#details-container #rating-div {
+    margin-left: auto;
+    font-size: 1.7rem;
+}
+
+#details-container #fill-star {
+    color: #FFD700;
+}
+
+#details-container #empty-star {
+    color: #000000;
+}
+
+#details-container #buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+#wish-list-form {
+    /* padding-left: 15vw; */
+    text-align: center;
+}
+
+#details-container #add-list-button {
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.5rem;
+}
+
+@media(max-width:480px) {
+    #details-container #add-list-button {
+        font-size: 1rem;
+    }
+
+}
+
+
+#details-container #add-list-button:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 500ms;
+}
+
+#details-container #add-cart {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#details-container .quantity {
+    height: 6.7vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vh;
+}
+
+#details-container .quantity button {
+    font-size: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+#details-container .quantity input {
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-radius: 5%;
+    text-align: center;
+    width: 8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Related Product */
+
+#related-products-container {
+    margin-top: 10vh;
+    background-color: white;
+    padding: 2rem;
+}
+
+#related-products-container>div {
+    position: relative;
+}
+
+#related-products-container #title {
+    font-size: 2.5rem;
+    margin-bottom: 5vh;
+}
+@media(max-width:360px){
+    #related-products-container #title {
+        font-size: 1.5rem;
+    }
+
+}
+#related-products-container #title::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#related-products .card-body {
+    padding: 0;
+}
+
+#related-products .card {
+    border: 1px solid #000000;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(231, 231, 231, 0.884);
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(117, 117, 117);
+}
+
+@media(max-width:1200px) {
+    #related-products .card {
+        margin-bottom: 5vh;
+    }
+
+}
+
+#related-products .card img {
+    height: 20vh;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1vh;
+}
+
+#related-products .card:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 200ms;
+}
+
+#related-products .card-title {
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#related-products .card-footer {
+    padding: 0px;
+}
+
+#related-products .card-text {
+    font-size: 1rem;
+}
+
+#fill-star {
+    color: #FFD700;
+}
+
+@media (max-width:1200px) {
+    #related-products .card-title {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:750px) {
+    #related-products .card-title {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:538px) {
+    #related-products .card-title {
+        font-size: 3.5vw;
+    }
+}
+
+/* end of related products */
+
+#details-container #add-button:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 500ms;
+}
+
+#details-container #add-button {
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+@media(max-width:480px) {
+    #details-container #add-button {
+        font-size: 1rem;
+     }
+}
+
+@media (max-width: 990px) {
+    #details-container #details-container {
+        width: 100%;
+    }
+
+    #details-container #product-image {
+        border-radius: 0%;
+        margin-right: 0%;
+        display: block;
+        width: 90vw;
+        height: 70vh;
+        padding: 10%;
+        background-color: rgb(255, 254, 254);
+
+    }
+
+    #details-container #product-name {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    #details-container #desc-div {
+        font-size: 1rem;
+        margin: 1vw;
+    }
+}
+
+.read-more-show {
+    cursor: pointer;
+    color: #ed8323;
+}
+
+.read-more-hide {
+    cursor: pointer;
+    color: #ed8323;
+}
+
+.hide_content {
+    display: none;
+}

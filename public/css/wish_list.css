@@ -1,0 +1,128 @@
+#wish_list_container #div_wish_list_title {
+    width: 95%;
+    margin-top: 10vh;
+    margin-left: 2vw;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5rem;
+    box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgb(117, 117, 117);
+    overflow: hidden;
+    text-align: center;
+}
+
+#wish_list_container #wish_list_title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+#wish_list_container #wish_list_content {
+    width: 95%;
+    margin-top: 5vh;
+    margin-bottom: 120px;
+    margin-left: 2vw;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5rem;
+    box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgb(117, 117, 117);
+    overflow: hidden;
+}
+
+#wish_list_container .card-body {
+    padding: 0;
+}
+
+#wish_list_container .card {
+    border: 1px solid red;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+    background-color: rgba(231, 231, 231, 0.884);
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(117, 117, 117);
+}
+
+#wish_list_container .card img {
+    height: 20vh;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1vh;
+}
+
+#wish_list_container .card:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 200ms;
+}
+
+#wish_list_container .card-title {
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#wish_list_container .card-footer {
+    padding: 0px;
+}
+
+wish_list_containerhomepage .card-text {
+    font-size: 1rem;
+}
+
+#fill-star {
+    color: #FFD700;
+}
+
+#delete-btn {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    font-weight: 700;
+}
+
+#delete-btn:hover {
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    font-weight: 700;
+    transition: background-color 500ms ease-out;
+}
+
+/* 
+#visit-btn:hover {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #1B5B9F;
+    border: #1B5B9F solid 1px;
+    transition: background-color 500ms ease-out;
+}
+
+#visit-btn {
+    font-weight: 700;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #1B5B9F;
+    background-color: #ffffff;
+    border: #1B5B9F solid 1px;
+} */
+
+@media (max-width:1200px) {
+    #wish_list_container .card-title {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:750px) {
+    #wish_list_container .card-title {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:538px) {
+    #wish_list_container .card-title {
+        font-size: 3.5vw;
+    }
+}

@@ -1,0 +1,64 @@
+/* -------------    {{{{{{{{  Category Page   }}}}}}}}} */
+.categories-container {
+    background-color: white;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    border-radius: 5rem;
+    box-shadow: 0.2rem 1rem 2.5rem 0.5rem;
+    overflow: hidden;
+}
+
+#categories-title {
+    letter-spacing: 0.4vw;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+    padding-top: 6vh;
+    font-size: 2rem;
+    padding-right: 12vw;
+    font-weight: 900;
+    width: 100vw;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* border-bottom: 2px solid rgb(255, 255, 255); */
+}
+
+.hr-title {
+    background-color: black;
+}
+
+.category-card {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 2vh;
+    border-radius: 15% 15% 15% 15%;
+    overflow: hidden;
+    box-shadow: 0.5rem 0.5rem 2rem black;
+    /* top-left | top-right | bottom-right | bottom-left */
+}
+
+.category-card:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 500ms;
+}
+
+.category-card .cat-img {
+    height: 25vh;
+    width: 30vh;
+    /* top-left | top-right | bottom-right | bottom-left */
+    border-radius: 15% 15% 15% 15%;
+}
+
+.category-card .text-img {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.822);
+    width: 30vh;
+    height: 6vh;
+    padding-top: 0.5vh;
+    font-size: 3vh;
+}
